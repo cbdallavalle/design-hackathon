@@ -1,6 +1,7 @@
 body {
   background-color: #4F6367;
   font-family: 'Open Sans', sans-serif;
+  padding: 10px;
 }
 
 h1 {
@@ -8,10 +9,59 @@ h1 {
   font-size: 50px;
   text-align: center;
   font-weight: 700;
+  margin: 20px 0;
 }
 
-.add-nemesis {
+h2 {
+ color: #EEF5DB;
+ font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+li {
+  font-size: 24px;
+  text-align: left;
+  list-style-type: disc;
+  /*list-style-position: outside;*/
+  padding: 5px 0;
+  margin-left: 15px;
+}
+
+
+button {
+  border: none;
+  font-size: 36px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 black;
+  width: 310px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.add-nemesis, 
+.fitness-graph {
   display: none;
+}
+
+
+.button-cont {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.button-compare {
+  background-color: #FE5F55;
+  color: #EEF5DB;
+}
+
+.button-set {
+  background-color: #B8D8D8;
+  color: black;
 }
 
 .nemesis-cont {
@@ -19,8 +69,8 @@ h1 {
   background-color: #EEF5DB;
   display: flex;
   justify-content: center;
-  margin: auto;
-  width: 310px;
+  margin: 0 auto 20px;
+  width: 270px;
   height: fit-content;
   padding: 10px;
 }
@@ -40,3 +90,12 @@ h1 {
   top: 0;
   left: 0;
 }
+
+.workout-list-cont {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: #EEF5DB;
+  padding: 20px 15px 10px;
+}
+
