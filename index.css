@@ -1,7 +1,7 @@
 body {
   background-color: #4F6367;
   font-family: 'Open Sans', sans-serif;
-  padding: 10px;
+  padding: 5%;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
 h2 {
  color: #EEF5DB;
  font-size: 32px;
+ margin: 10px 0;
 }
 
 h4 {
@@ -22,11 +23,15 @@ h4 {
   margin-top: 10px;
 }
 
+h5 {
+  font-size: 28px;
+  color: #7A9E9F;
+}
+
 li {
   font-size: 24px;
   text-align: left;
   list-style-type: disc;
-  /*list-style-position: outside;*/
   padding: 5px 0;
   margin-left: 15px;
 }
@@ -47,7 +52,6 @@ button {
   display: none;
 }
 
-
 .button-cont {
   display: flex;
   flex-direction: column-reverse;
@@ -62,6 +66,21 @@ button {
 .button-set {
   background-color: #B8D8D8;
   color: black;
+}
+
+.calendar-info {
+  background-color: #EEF5DB;
+}
+
+.comparison {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.completion {
+  display: flex;
+  justify-content: space-around;
 }
 
 .nemesis-cont {
@@ -91,6 +110,12 @@ button {
   left: 0;
 }
 
+.weekdays {
+  border: 3px solid #7A9E9F;
+  text-align: center;
+  margin: 15px auto;
+}
+
 .workout-list-cont {
   display: flex;
   flex-direction: column-reverse;
@@ -99,3 +124,47 @@ button {
   padding: 20px 15px 10px;
 }
 
+@media screen and (min-width: 500px) {
+  .workout-cont,
+  .calendar-info {
+    width: 450px;
+  }
+
+  .workout-comparisons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .add-nemesis, 
+  .fitness-graph {
+    display: block;
+  }
+
+  .add-nemesis h2 {
+    color: black;
+    text-align: center;
+  }
+
+  .heading-cont {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nemesis-cont {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+  }
+
+  .nemesis-photo-cont img {
+    width: 300px;
+  }
+
+  #graph-img {
+    width: 360px;
+  }
+
+}
